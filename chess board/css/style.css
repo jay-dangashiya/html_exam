@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.allbox {
+    height: 79px;
+    width: 95px;
+    float: left;
+
+
+}
+
+.box1 {
+    background-color: rgb(8, 0, 0);
+    color: rgb(235, 228, 225);
+}
+
+.box2 {
+    background-color: rgb(250, 247, 247);
+    color: rgb(17, 0, 0);
+}
+
+.fa-solid {
+    font-size: 40px;
+    margin-left: 33px;
+    margin-top: 12px;
+
+}
+
+.borad1 {
+  }
