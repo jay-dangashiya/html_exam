@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #6b7280;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0e0101;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    box-shadow: 0 2px 4px rgba(17, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 85%;
+    margin: auto;
+}
+
+nav .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    gap: 24px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+nav ul li a:focus {
+    color: #2563eb;
+    background-color: rgba(1, 6, 17, 0.1);
+    outline: none;
+}
+
+nav ul li ul.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    min-width: 160px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.dropdown li a {
+    padding: 10px 20px;
+    color: #00050c;
+    font-weight: 500;
+}
+
+nav ul li:hover ul.dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+main {
+    padding: 20px;
+}
+
+.about-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-section p{
+    font-size: 1.1rem;
+    text-align: justify;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+footer {
+    background-color: #0c0000;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .footer-links ul {
+     
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .footer-links ul li {
+      display: flex;
+    list-style-type: none;
+}
+.social-icon{
+    display: flex;
+    gap: 40px;
+}
+
+.social-icon li {
+    list-style-type: none;
+}
+
+.social-icon li i{
+    font-size: 40px;
+    color: white;
+}
+
+footer .footer-links ul li a {
+    
+    text-decoration: none;
+    color: white;
+}
+
+.footer-heading{
+    font-size: 1.25rem;
+    font-display: justify;
+}
+
+.footer-main{
+    display: flex;
+    justify-content: space-around;
+}
